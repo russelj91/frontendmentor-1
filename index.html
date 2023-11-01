@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      @font-face {
+        font-family: "YourFontName"; /* Replace 'YourFontName' with your desired font name. */
+        src: url("path-to-your-font.woff") format("woff"); /* Replace 'path-to-your-font.woff' with the correct file path. */
+        font-weight: normal; /* You can specify font-weight if needed. */
+        font-style: normal; /* You can specify font-style if needed. */
+      }
       body {
         display: flex;
         justify-content: center;
@@ -17,7 +23,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        background-color: rgb(205, 236, 252);
+        background-color: hsl(212, 45%, 89%);
         box-shadow: 5px 5px 50px rgb(95, 99, 104, 0.25);
       }
       .column {
@@ -38,12 +44,14 @@
         color: rhsl(218, 44%, 22%);
         font-size: 20px;
         font-weight: 700;
+        font-family: "YourFontName", sans-serif;
       }
 
       .content {
         color: hsl(212, 45%, 89%);
         font-size: 15px;
         font-weight: 400;
+        font-family: "YourFontName", sans-serif;
       }
 
       @media only screen and (max-width: 768px) {
